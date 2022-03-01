@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Missing</string>
+    <string name="hello">Hello</string>
+    <string name="search">Search</string>
+    <string name="missing">Missing</string>
+    <string name="found">Found</string>
+    <string name="tracking">Tracking</string>
+    <string name="feeds">Feeds</string>
+    \
+    <string name="text_feeds">FEEDS</string>
+    <string name="feed_user_text">If someone is missing. You can search for him manually through the tracing services, or you can use one of our services automatically by entering the data of the person you want to search for, and the best possible result will be shown.</string>
+    <string name="user_report">In case person is found who can\'t reach his family, you can user our service throw reported about him so his family can reach him.</string>
+    <string name="report">REPORT</string>
+    <string name="profile">Profile</string>
+    <string name="notifications">Notifications</string>
+    <string name="tagged_reports">Tagged Reports</string>
+    <string name="inbox">Inbox</string>
+    <string name="others">Others</string>
+    <string name="settings">Settings</string>
+    <string name="welcome">Welcome</string>
+</resources>

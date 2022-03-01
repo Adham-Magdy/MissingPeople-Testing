@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Authentication.UpdateProfileActivity"
+    android:background="@color/light_gray">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_margin="15dp"
+        android:background="@color/white"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_update_profile_head"
+            android:layout_marginTop="30dp"
+            android:text="You can update your profile details"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            />
+        <!-- Update Profile Name-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_update_profile_name"
+            android:layout_below="@+id/textView_update_profile_head"
+            android:text="Name"
+            android:layout_marginTop="30dp"
+            android:textSize="16sp"
+            android:padding="6dp"
+            android:textColor="#555555"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_update_profile_name"
+            android:background="@drawable/border"
+            android:layout_below="@+id/textView_update_profile_name"
+            android:inputType="textPersonName"
+            android:padding="6dp"
+            android:textSize="16sp"
+            android:hint="Enter full name"
+            />
+        <!-- Update Profile Date Of Birth-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_update_profile_dob"
+            android:layout_below="@+id/editText_update_profile_name"
+            android:text="Date of Birth (dd/mm/yyyy)"
+            android:layout_marginTop="15dp"
+            android:textSize="16sp"
+            android:padding="6dp"
+            android:textColor="#555555"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_update_profile_dob"
+            android:background="@drawable/border"
+            android:layout_below="@+id/textView_update_profile_dob"
+            android:inputType="date"
+            android:focusable="false"
+            android:padding="6dp"
+            android:textSize="16sp"
+            android:hint="Select your date of birth"
+            />
+
+        <!-- Gender -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_update_profile_gender"
+            android:layout_below="@+id/editText_update_profile_dob"
+            android:text="Gender"
+            android:layout_marginTop="15dp"
+            android:textSize="16sp"
+            android:padding="6dp"
+            android:textColor="#555555"
+            />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioGroup_update_profile_gender"
+            android:layout_below="@+id/textView_update_profile_gender"
+            android:orientation="horizontal"
+            >
+
+            <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton_update_profile_gender_female"
+            android:text="Female"
+            android:textSize="16sp"
+            android:textColor="#555555"
+            />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButton_update_profile_gender_male"
+                android:text="Male"
+                android:textSize="16sp"
+                android:textColor="#555555"
+                />
+
+        </RadioGroup>
+        <!--Update mobile-->
+        <TextView
+            android:id="@+id/textView_update_profile_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioGroup_update_profile_gender"
+            android:layout_marginTop="15dp"
+            android:padding="6dp"
+            android:text="Mobile Number"
+            android:textColor="#555555"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editText_update_profile_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_update_profile_mobile"
+            android:background="@drawable/border"
+            android:hint="Enter your email number without (+21)"
+            android:inputType="phone"
+            android:padding="6dp"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/button_update_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText_update_profile_mobile"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/input_field"
+            android:text="UPDATE EMAIL"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button_update_profile_pic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button_update_email"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/input_field"
+            android:text="UPDATE PROFILE PIC"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button_update_profile_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button_update_profile_pic"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/input_field"
+            android:text="UPDATE PROFILE "
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progress_bar_update_profile"
+            android:layout_centerHorizontal="true"
+            android:elevation="10dp"
+            style="?android:progressBarStyleLarge"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+
+</ScrollView>
